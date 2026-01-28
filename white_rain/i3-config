@@ -1,0 +1,33 @@
+# --- Basic Settings ---
+set $mod Mod4
+font pango:JetBrainsMono Nerd Font 10
+floating_modifier $mod
+
+# --- White Phosphor with Rainbow Accents ---
+# Class                 Border  Backgr. Text    Indicator Child_border
+client.focused          #e0e0e0 #000000 #e0e0e0 #e0e0e0   #e0e0e0
+client.focused_inactive #666666 #000000 #999999 #666666   #666666
+client.unfocused        #666666 #000000 #999999 #666666   #666666
+client.urgent           #ff0000 #000000 #e0e0e0 #ff0000   #ff0000
+
+# --- Window Borders (Thin and crisp) ---
+default_border pixel 2
+gaps inner 10
+gaps outer 0
+
+# --- Auto-Start Apps ---
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg
+exec_always --no-startup-id picom --vsync # Prevents screen tearing
+exec_always --no-startup-id polybar main &
+
+# --- Keybindings (Standard) ---
+bindsym $mod+Return exec alacritty
+bindsym $mod+q kill
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Yes' 'i3-msg exit'"
+
+# Arrow keys to move focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right

@@ -1,0 +1,42 @@
+[window]
+padding = { x = 10, y = 10 }
+opacity = 1.0  # Keep 1.0 for OLED black
+
+[font]
+size = 12.0
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+# --- Colors (White Phosphor with Rainbow Accents) ---
+[colors.primary]
+background = "#000000"  # True Black for OLED
+foreground = "#e0e0e0"  # White Phosphor - main text
+
+[colors.normal]
+black   = "#000000"
+red     = "#ff0000"     # Rainbow Red
+green   = "#00ff00"     # Rainbow Green  
+yellow  = "#ffff00"     # Rainbow Yellow
+blue    = "#0099ff"     # Rainbow Blue
+magenta = "#ff00ff"     # Rainbow Magenta
+cyan    = "#00ffff"     # Rainbow Cyan
+white   = "#e0e0e0"     # White Phosphor
+
+[colors.bright]
+black   = "#666666"     # Gray
+red     = "#ff6666"     # Light Red
+green   = "#66ff66"     # Light Green
+yellow  = "#ffff66"     # Light Yellow
+blue    = "#66b3ff"     # Light Blue
+magenta = "#ff66ff"     # Light Magenta
+cyan    = "#66ffff"     # Light Cyan
+white   = "#ffffff"     # Bright White
+
+# Cursor with rainbow effect
+[colors.cursor]
+text = "#000000"
+cursor = "#00ffff"  # Cyan cursor
+
+# Selection
+[colors.selection]
+text = "#000000"
+background = "#00ffff"  # Cyan selection
