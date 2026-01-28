@@ -212,25 +212,3 @@ sudo apt install i3-wm i3status
 ✅ **Universal switching** - One command updates ALL apps  
 
 ---
-
-## 📸 Screenshots
-
-*(Add your screenshots here after installation!)*
-
----
-
-## 🤝 Contributing
-
-Found a bug? Have improvements? Open an issue or PR!
-
----
-
-## 📝 License
-
-MIT License - Use freely!
-
----
-
-**Made with 💛 for OLED displays and tiling window manager enthusiasts**
-
-Enjoy your beautiful, customizable i3 setup! 🎉
